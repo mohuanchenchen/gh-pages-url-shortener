@@ -11,6 +11,9 @@
       var GITHUB_ISSUES_LINK =
         "https://api.github.com/repos/mohuanchenchen/gh-pages-url-shortener/issues/";
       var PATH_SEGMENTS_TO_SKIP = 1;
+      var STATIC_LINKS = {
+        "1": "https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md",
+      };
 
       /**
        * DO NOT TOUCH ANYTHING BELOW THIS COMMENT UNLESS YOU KNOW WHAT YOU ARE DOING
@@ -27,6 +30,11 @@
         var issueNumber = location.pathname.split("/")[
           PATH_SEGMENTS_TO_SKIP + 1
         ];
+        if (Object.prototype.hasOwnProperty.call(STATIC_LINKS, issueNumber)) {
+          location.replace(STATIC_LINKS[issueNumber]);
+          return;
+        }
+
         var homepage =
           location.protocol +
           "//" +

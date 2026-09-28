@@ -9,10 +9,10 @@ entirely on GitHub for free!
 
 ## 本 fork 的短链
 
-- Pages 地址：<https://mohuanchenchen.github.io/gh-pages-url-shortener/>
+- 推荐短链站点：<https://mohuanchenchen.github.io/s>，站点代码在 [s 仓库](https://github.com/mohuanchenchen/s)。本仓库继续作为 Issue 数据库。
 - 在[本仓库的 Issues](https://github.com/mohuanchenchen/gh-pages-url-shortener/issues)中新建 Issue，标题只填完整的 `https://` 目标 URL。
-- Issue `#N` 对应 `https://mohuanchenchen.github.io/gh-pages-url-shortener/N`。例如 [#1](https://github.com/mohuanchenchen/gh-pages-url-shortener/issues/1) 对应[这个短链](https://mohuanchenchen.github.io/gh-pages-url-shortener/1)。
-- 默认通过 GitHub 公共 API 查询 Issue 标题，可能遇到访客 IP 的 API 限流。重要链接可以同时加入 `404.html` 的 `STATIC_LINKS`，避免访问时依赖 API；#1 已这样配置。
+- Issue `#N` 对应 `https://mohuanchenchen.github.io/s/N`。例如 [#1](https://github.com/mohuanchenchen/gh-pages-url-shortener/issues/1) 对应[这个短链](https://mohuanchenchen.github.io/s/1)。旧地址 `https://mohuanchenchen.github.io/gh-pages-url-shortener/N` 仍可使用。
+- 默认通过 GitHub 公共 API 查询 Issue 标题，可能遇到访客 IP 的 API 限流。重要链接可以同时加入 [s/404.html](https://github.com/mohuanchenchen/s/blob/main/404.html) 的 `STATIC_LINKS`，避免访问时依赖 API；#1 已这样配置。
 
 以下 Demo 介绍的是原作者的 `ccb.wtf`，其中的数据库仓库不用于本 fork。
 
